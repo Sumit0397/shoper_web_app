@@ -1,0 +1,115 @@
+.grand-parent-div{
+    background-color: #fff;
+    z-index: 9;
+    padding: 1rem;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.search-bar input{
+    width: 16vw;
+    padding: 0.5rem;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+}
+
+.search-bar span{
+    position: absolute;
+    right: 30px;
+    margin-top: 5px;
+    z-index: 10;
+}
+
+
+.all-categories{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.show-categories div{
+    margin: 5px auto;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.show-categories div:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.price-sorting{
+    margin-top: 10px;
+}
+
+.price-sorting p{
+    margin-bottom: 2px;
+}
+
+.price-sorting div{
+    cursor: pointer;
+}
+
+.price-sorting div:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.price-range{
+    margin: 40px auto;
+}
+
+.price-range input{
+    width: 15vw;
+}
+
+.filter-action{
+    background-color: rgb(81, 126, 81);
+    color: white;
+    padding: 0.5rem;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-align: center;
+    width: 12vw;
+}
+
+.filter-action:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 780px) {
+    .main-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-bar input{
+        width: 50vw;
+    }
+
+    .search-bar span{
+        display: none;
+    }
+
+    .price-range{
+        display: none;
+    }
+
+    .filter-action{
+        width: 18vw;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .search-bar input{
+        width: 30vw;
+    }
+
+    .filter-action{
+        width: 30vw;
+    }
+}

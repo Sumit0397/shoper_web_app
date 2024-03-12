@@ -1,0 +1,135 @@
+.products-body{
+    display: flex;
+    width: 90vw;
+    margin: 20px auto;
+}
+
+
+.products-sideBar{
+    width: 20vw;
+    height: 80vh;
+    margin-right: 5px;
+    position: sticky;
+    top:8rem;
+    z-index: 10;
+}
+
+.products-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80vw;
+}
+
+.product-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-image{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-image:hover img {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+    object-fit: cover;
+}
+
+.product-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.price{
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: rgb(122, 72, 7);
+}
+
+.product-action-link{
+    background-color: darkcyan;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.product-action-link:hover{
+    background-color: rgb(2, 58, 58);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .product-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .product-actions{
+        gap: 2rem;
+    }
+
+    .products-body{
+        flex-direction: column;
+    }
+
+    .products-sideBar{
+        width: 90vw;
+        height: 20vh;
+        margin-bottom: 20px;
+        margin-top: -15px;
+        top: 5rem;
+    }
+
+    .products-container{
+        width: 90vw;
+        margin: 20px auto;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .product-image{
+        width: 150px;
+        height: 150px;
+    }
+
+    .product-actions{
+        gap: 2rem;
+    }
+
+    .products-body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .products-sideBar{
+        width: 90vw;
+        height: 20vh;
+        margin-bottom: 20px;
+        margin-top: -15px;
+        top: 5rem;
+    }
+
+    .products-container{
+        width: 90vw;
+        margin: 20px auto;
+    }
+}
